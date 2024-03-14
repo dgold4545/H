@@ -1059,3 +1059,34 @@ body {
   
 }
 
+
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+  
+  
+  .container {
+    min-width: 736px;
+  }
+
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav__link {
+    padding: 24px 0;
+  }
+}
