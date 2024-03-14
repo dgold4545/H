@@ -32,10 +32,10 @@
             <a href="./index.html" class="nav__link is-active">Studio</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Portfolio</a>
+            <a href="#portfolio" class="nav__link">Portfolio</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Contacts</a>
+            <a href="#contacts" class="nav__link">Contacts</a>
           </li>
           </ul>
         </nav>
@@ -373,7 +373,7 @@
         </div>
       </section>
 
-      <section class="portfolio section">
+      <section class="portfolio section" id="portfolio">
         <div class="container">
           <h2 class="portfolio__title">Our Portfolio</h2>
 
@@ -516,7 +516,7 @@
 
     </main>
     
-    <footer class="footer section">
+    <footer class="footer section" id="contacts">
       <div class="container">
         
 
@@ -717,7 +717,9 @@
 
     <div class="backdrop-menu">
       <div class="modal-menu">
-        <button class="close-btn-menu" type="button">
+        <div class="modal-wrapper">
+
+<button class="close-btn-menu" type="button">
           <svg class="close-btn__icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -725,13 +727,13 @@
 
         <ul class="modal-menu__list">
           <li class="modal-menu__item">
-            <a href="./index.html" class="modal-menu__link ">Studio</a>
+            <a href="./index.html" class="modal-menu__link prime-color">Studio</a>
           </li>
           <li class="modal-menu__item">
-            <a href="./index.html" class="modal-menu__link">Portfolio</a>
+            <a href="#portfolio" class="modal-menu__link">Portfolio</a>
           </li>
           <li class="modal-menu__item">
-            <a href="./index.html" class="modal-menu__link">Contacts</a>
+            <a href="#contacts" class="modal-menu__link">Contacts</a>
           </li>
           </ul>
         </nav>
@@ -743,8 +745,8 @@
               >info@devstudio.com</a
             >
           </li>
-          <li class="menu-address__item">
-            <a class="menu-address__contact" href="tel:+110001111111"
+          <li class="menu-address__item ">
+            <a class="menu-address__contact prime-color" href="tel:+110001111111"
               >+11 (000) 111-11-11</a
             >
           </li>
@@ -784,6 +786,10 @@
                 </a>
               </li>
             </ul>
+
+
+        </div>
+        
 
       </div>
     </div> 
