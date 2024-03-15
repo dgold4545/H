@@ -1,8 +1,7 @@
 'use strict'
 
-document.querySelector('.button').addEventListener('click', function () {
+document.querySelector('.main-btn').addEventListener('click', function () {
   document.querySelector('.backdrop').classList.toggle('is-open');
-  
 });
 
 document.querySelector('.close-btn').addEventListener('click', function () {
@@ -12,7 +11,7 @@ document.querySelector('.close-btn').addEventListener('click', function () {
 
 
 
-document.querySelector('.menu-btn').addEventListener('click', function () {
+document.querySelector('.burger-btn').addEventListener('click', function () {
   document.querySelector('.backdrop-menu').classList.toggle('is-open');
 });
 
