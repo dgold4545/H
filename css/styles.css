@@ -256,6 +256,16 @@ input {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/mobile/mobileBG@2x.jpg');
+  }
+}
+
 .hero__section {
   padding: 72px 0;
 }
@@ -310,12 +320,12 @@ input {
   }
 
   .hero {
-    min-width: 600px;
+    min-width: 436px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/desctop/desctop-bg.jpg');
+      url('../images/tablet/tablet-bg.jpg');
   }
 
   .hero__title {
@@ -329,12 +339,44 @@ input {
   }
 }
 
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/tablet/tablet-bg.jpg@2x');
+  }
+}
+
+
+
+
 @media screen and (min-width: 1158px) {
   .hero__section {
     padding: 188px 0;
   }
+
+  .hero {
+    min-width: 600px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/desctop/desctop-bg@2x.jpg');
+  }
 }
 
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/desctop/desctop-bg@2x.jpg');
+  }
+}
 /* 
   ///HERO SECTION
 */
@@ -1073,6 +1115,12 @@ input {
   Menu Burger  
  */
 .backdrop-menu {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  
+.backdrop-menu {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -1197,5 +1245,7 @@ input {
  /* 
   //// Menu Burger  
  */
+
+}
 
  
