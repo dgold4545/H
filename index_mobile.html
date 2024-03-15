@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
@@ -13,75 +14,74 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
+    
   </head>
-<body>
-  
-  <header class="header-page">
-    <div class="container">
-      <div class="header-wrapper">
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        
         <nav class="nav">
 
-          <a class="logo" href="./index.html"><span class="logo__text prime-color">Web</span>Studio</a>
+          <a href="./index.html" class="logo"
+          >Web<span class="logo logo_color-black">Studio</span></a
+          >
 
           <ul class="nav__list">
-
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link is-active-link">Studio</a>
-            </li>
-
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link">Portfolio</a>
-            </li>
-
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link">Contacts</a>
-            </li>
-
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link is-active">Studio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Contacts</a>
+          </li>
           </ul>
-
-          
         </nav>
 
-        <address class="address">
-            <ul class="address__list">
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
-              </li>
+          <address class="address">
+        <ul class="address__list">
+          <li class="address__item">
+            <a class="address__contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="address__item">
+            <a class="address__contact" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+          </address>
 
-              <li class="address__item">
-                <a href="tel:+110001111111" class="address__link">+11 (000) 111-11-11</a>
-              </li>
-            </ul>
-        </address>
-
-
-
-        <button class="burger-btn" type="button">
-          <svg class="burger-btn__icon" width="18" height="16">
-            <use href="./images/mobile/icons.svg#icon-heroBurger"></use>
-          </svg>
+        <button type="button" class="menu-btn">
+        <svg class="menu-btn__icon" width="18" height="18">
+          <use href="./images/mobile/icons.svg#icon-heroBurger"></use>
+        </svg>
         </button>
+
       </div>
-      
-    </div>
-  </header>
+    </header>
 
-  <main>
+    <main>
 
-    <section class="hero hero__section">
-      <div class="container">
-        <h1 class="hero__title">Effective Solutions for Your Business</h1>
-        <button type="button" class="main-btn">Order Service</button>
-      </div>
-    </section>
+      <section class="hero section">
 
-    <section class="quality section">
-      <div class="container">
+        <div class="container">
 
-        <h2 class="quality__title visually-hidden">Quality</h2>
+          <h1 class="hero__title">Effective Solutions for Your Business</h1>
+          <button class="button" type="button ">Order Service</button>
 
-        <ul class="quality-list">
+        </div>
+      </section>
+
+      <section class="quality section">
+        <div class="container">
+          <h2 class="quality__title visually-hidden">Quality</h2>
+
+          <ul class="quality-list">
             <li class="quality-list__item">
               <div class="quality-list__container">
                 <svg class="quality-list__icon" width="64" height="64">
@@ -131,13 +131,12 @@
               </p>
             </li>
           </ul>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <section class="team section">
-      <div class="container">
-
-         <h2 class="team__title">Our Team</h2>
+      <section class="section team">
+        <div class="container">
+          <h2 class="team__title">Our Team</h2>
 
           <ul class="team-list">
             <li class="team-list__item">
@@ -372,10 +371,10 @@
               </div>
             </li>
           </ul>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <section class="portfolio section" id="portfolio">
+      <section class="portfolio section" id="portfolio">
         <div class="container">
           <h2 class="portfolio__title">Our Portfolio</h2>
 
@@ -515,22 +514,24 @@
         </div>
       </section>
 
-  </main>
 
-  <footer class="footer section" id="contacts">
+    </main>
+    
+    <footer class="footer section" id="contacts">
       <div class="container">
         
 
           <div class="side-content">  
-            <div class="footer-logo__wrapper">
-              <a class="logo" href="./index.html"><span class="logo__text prime-color">Web</span>Studio</a>
-
+            <!-- <div class="footer-logo__wrapper"> -->
+              <a href="./index.html" class="logo"
+              >Web<span class="logo logo_color-white">Studio</span></a
+            >
             
             
-              <p class="webstudio-contant__description">
+            <p class="webstudio-contant__description">
               Increase the flow of customers and sales for your business with
               digital marketing & growth solutions.
-              </p>
+            </p>
           </div>
 
           <div class="mid-content">
@@ -595,8 +596,205 @@
             </form>
           </div>
 
+
+
+        
+        
       </div>
     </footer>
 
-</body>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="close-btn" type="button">
+          <svg class="close-btn__icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <p class="modal__title">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form action="#" class="modal-form">
+
+          <div class="label-container">
+            <label for="user-name" class="modal-form__label">Name</label>
+          
+            <div class="input-container">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-form__input"
+              />
+              <svg class="modal-form__icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-man"></use>
+              </svg>
+            </div>
+          
+          </div>
+
+          
+
+          <div class="label-container">
+            <label for="user-phone" class="modal-form__label">Phone</label>
+
+            <div class="input-container">
+            <input
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              class="modal-form__input"
+            />
+            <svg class="modal-form__icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            </div>
+
+          </div>
+
+          
+
+          <div class="label-container">
+            <label for="user-email" class="modal-form__label">Email</label>
+
+            <div class="input-container">
+              <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              class="modal-form__input"
+              />
+              <svg class="modal-form__icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+            </div>
+
+
+          </div>
+
+          
+
+          <div class="textarea-container">
+            <label for="user-comment" class="modal-form__label">Comment</label>
+
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-form__comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="input-container input-container--flex">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              class="modal-form__checkbox visually-hidden"
+            />
+
+            <label
+              for="user-privacy"
+              class="modal-form__label modal-form__label--appere"
+            >
+              <span class="review-form-own-checkbox">
+                <svg class="modal-form__icon-box" width="8" height="8">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </span>
+
+              <span class="modal-form__description">I accept the terms and conditions of the</span>
+              
+              <a class="modal-form__link" href="#">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
+    </div> 
+
+    <div class="backdrop-menu">
+      <div class="modal-menu">
+        <div class="modal-wrapper">
+
+<button class="close-btn-menu" type="button">
+          <svg class="close-btn__icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="modal-menu__list">
+          <li class="modal-menu__item">
+            <a href="./index.html" class="modal-menu__link prime-color">Studio</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#portfolio" class="modal-menu__link">Portfolio</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#contacts" class="modal-menu__link">Contacts</a>
+          </li>
+          </ul>
+        </nav>
+
+          <address class="menu-address">
+        <ul class="menu-address__list">
+          <li class="menu-address__item">
+            <a class="menu-address__contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="menu-address__item ">
+            <a class="menu-address__contact prime-color" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+          </address>
+
+        <ul class="mid-list">
+              <li class="mid-list__item">
+                <a class="mid-list__link" href="https://www.instagram.com/">
+                  <svg class="mid-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mid-list__item">
+                <a class="mid-list__link" href="https://twitter.com/?lang=ru">
+                  <svg class="mid-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mid-list__item">
+                <a class="mid-list__link" href="https://uk-ua.facebook.com/">
+                  <svg class="mid-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mid-list__item">
+                <a class="mid-list__link" href="https://www.linkedin.com/">
+                  <svg class="mid-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+
+        </div>
+        
+
+      </div>
+    </div> 
+
+    <script type="module" src="./js/script.js"></script>
+  </body>
 </html>
